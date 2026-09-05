@@ -37,11 +37,13 @@ in
   # ==========================================================================
   # JOURNALD — giới hạn size, không tắt hẳn
   # ==========================================================================
-  services.journald.extraConfig = ''
-    SystemMaxUse=100M
-    SystemMaxFileSize=20M
-    RuntimeMaxUse=50M
-  '';
+  services.journald.settings = {
+  	Journal = {
+    SystemMaxUse = "100M";
+    SystemMaxFileSize = "20M";
+    RuntimeMaxUse = "50M";
+    };
+  };
 
   # ==========================================================================
   # oomd — tắt theo yêu cầu tối giản tuyệt đối
