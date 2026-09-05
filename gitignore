@@ -1,0 +1,4 @@
+# File này riêng cho từng máy (UUID ổ đĩa, kernel modules initrd, CPU...)
+# KHÔNG được track trong repo — mỗi máy cài phải tự sinh bằng
+# `nixos-generate-config --root /mnt`, không lấy từ GitHub.
+hardware-configuration.nix

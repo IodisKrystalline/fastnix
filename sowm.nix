@@ -15,7 +15,7 @@ stdenv.mkDerivation rec {
     #   1. nixos-rebuild switch --flake .#fastnix
     #   2. Build sẽ báo lỗi "hash mismatch", copy dòng "got: sha256-..."
     #   3. Dán giá trị đó thay cho lib.fakeHash bên dưới rồi build lại.
-    hash = sha256-Q65sU5K86pFk3QNlzfxgyoEw6NpBaZQmFOkUFnmoh+U=;
+    hash = "sha256-Q65sU5K86pFk3QNlzfxgyoEw6NpBaZQmFOkUFnmoh+U=";
   };
 
   buildInputs = [ libX11 ];
