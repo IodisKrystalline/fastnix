@@ -123,7 +123,7 @@ in
     isNormalUser = true;
     extraGroups = [ "wheel" "video" "audio" "input" ];
     shell = pkgs.dash;
-    initialPassword = "changeme"; # đổi ngay sau khi cài bằng `passwd`
+    initialPassword = "1"; # đổi ngay sau khi cài bằng `passwd`
   };
 
   # ==========================================================================
